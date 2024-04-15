@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kdam+Thmor+Pro&family=Noto+Sans+Cham:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+}
+
+.circle-svg {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 1000;
+  font-style: normal;
+  transform: rotate(-10deg);
+}
+
+.logo {
+  font-family: "Great Vibes", cursive;
+  font-weight: 1000;
+  font-style: normal;
+  transform: rotate(-10deg);
+}

@@ -3,7 +3,7 @@ import ProjectLayout from './ProjectLayout'
 
 export default function Projects() {
     return (
-        <div id='work' className="container w-full h-screen p-5">
+        <div id='work' className="container w-full h-fit p-5">
 
             <div className="container w-fit my-10 flex p-10 items-center justify-center mx-auto">
                 <h1 className="great-vibes-regular md:text-[140px] text-[70px] absolute text-[#2a2929] text-center">Projects</h1>

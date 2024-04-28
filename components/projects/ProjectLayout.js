@@ -32,9 +32,11 @@ export default function ProjectLayout() {
         <div>
             <div className="container w-full md:w-11/12 mx-auto columns-1 md:columns-2">
                 {
-                    projectList.slice(0, n).map((d, i) => (
-                        <ProjectCards key={i} data={d} />
-                    ))
+                    projectList?.map((d, i) => {
+                        if (i <= n) {
+                            return <ProjectCards key={i} data={d} />
+                        }
+                    })
                 }
             </div>
             <div className="container w-fit mx-auto flex items-center justify-center p-4">
